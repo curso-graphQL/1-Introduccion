@@ -7,6 +7,9 @@
 7. [Root Types](#root)
 8. [Input Types](#input)
 9. [Comentarios](#comments)
+10. [Merge, alias y fragment](#maf)
+11. [Query Variables](#variables)
+12. [Include y skip](#is)
 
 <a name="schema"></a>
 # 1. Esquema GraphQL
@@ -198,7 +201,8 @@ Sirven para comunicar al cliente con el servidor a través de ellos.
     - **Varias líneas:** Triples comillas dobles.
 - Facilita la generación de SDL.
 
-# 10 Merge, Alias y Fragment
+<a name="maf"></a>
+# 10. Merge, Alias y Fragment
 ## Merge
 Si realizamos dos consultas en paralelo sobre la misma instancia el resultado será una mezcla de ambas consultas.
 
@@ -213,3 +217,18 @@ Para poder realizar dos consultas en paralelo sobre la misma instancia con disti
 Es posible separar partes comunes a varias consultas mediante fragments, de forma que no repitamos código.
 
 ![image11](./images/image11.png)
+
+
+<a name="variables"></a>
+# 11. Query Variables
+Es posible parametrizar argumentos utilizando query variables.
+
+![image12](./images/image12.png)
+
+<a name="is"></a>
+# 12. Include y skip
+Estas directivas permiten incluir o excluir campos en una consulta de forma parametrizada.
+
+![image13](./images/image13.png)
+
+![image14](./images/image14.png)
