@@ -157,7 +157,7 @@ Sirven para comunicar al cliente con el servidor a través de ellos.
 
 ![image1](./images/image1.png)
 
-![image1](./images/image2.png)
+![image2](./images/image2.png)
 
 ## Mutation
 - Punto de entrada para realizar las operaciones de modificación.
@@ -165,9 +165,9 @@ Sirven para comunicar al cliente con el servidor a través de ellos.
 - Similar a una función.
 - Es la única forma en que podemos modificar datos en GraphQL.
 
-![image1](./images/image3.png)
+![image3](./images/image3.png)
 
-![image1](./images/image4.png)
+![image4](./images/image4.png)
 
 
 ## Subscription
@@ -175,9 +175,9 @@ Sirven para comunicar al cliente con el servidor a través de ellos.
 - Utiliza la conexión mediante Web Sockets para obtener cambios.
 - Notifica al que se suscribe y mantiene interacción en tiempo real.
 
-![image1](./images/image5.png)
+![image5](./images/image5.png)
 
-![image1](./images/image6.png)
+![image6](./images/image6.png)
 
 <a name="input"></a>
 # 8. Input Types
@@ -185,9 +185,9 @@ Sirven para comunicar al cliente con el servidor a través de ellos.
 - Se pueden pasar valores simples (escalares) u objetos complejos.
 - Se comporta como los argumentos ante cualquier operación.
 
-![image1](./images/image7.png)
+![image7](./images/image7.png)
 
-![image1](./images/image8.png)
+![image8](./images/image8.png)
 
 <a name="comments"></a>
 # 9. Comentarios
@@ -197,3 +197,19 @@ Sirven para comunicar al cliente con el servidor a través de ellos.
     - **Una línea:** Comillas dobles.
     - **Varias líneas:** Triples comillas dobles.
 - Facilita la generación de SDL.
+
+# 10 Merge, Alias y Fragment
+## Merge
+Si realizamos dos consultas en paralelo sobre la misma instancia el resultado será una mezcla de ambas consultas.
+
+![image9](./images/image9.png)
+
+## Alias
+Para poder realizar dos consultas en paralelo sobre la misma instancia con distintos argumentos, es necesario el uso de alias.
+
+![image10](./images/image10.png)
+
+## Fragment
+Es posible separar partes comunes a varias consultas mediante fragments, de forma que no repitamos código.
+
+![image11](./images/image11.png)
