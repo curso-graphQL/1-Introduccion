@@ -11,8 +11,12 @@
 11. [Query Variables](#variables)
 12. [Include y skip](#is)
 
+<hr>
+
 <a name="schema"></a>
+
 # 1. Esquema GraphQL
+
 - Centro de cualquier implementación del servidor del GraphQL.
 - Sin el esquema mo podemos contruir la API.
 - Es la parte más compleja de un proyecto GraphQL.
@@ -37,8 +41,12 @@
     - Nombres de tipo en PascalCase.
     - Valores en ALL_CAPS.
 
+<hr>
+
 <a name="scalar"></a>
+
 # 2. Scalar Types
+
 - Datos primitivos que pueden almacenar un solo valor.
 - Con los tipos de objeto y tipo de raíz imprescindible.
 - Define la mayoría de las propiedades de las entidades.
@@ -56,7 +64,10 @@
 - Implementar con el *GraphQLScalarType*.
 - Definir las propiedades *parseValue, serialize y parseLiteral*.
 
+<hr>
+
 <a name="object"></a>
+
 # 3. Object types
 
 - Entidades con las que modelamos y estructuramos los servicios.
@@ -81,8 +92,12 @@ type Asignatura {
 }
 ~~~
 
+<hr>
+
 <a name="enum"></a>
+
 # 4. Enum Types
+
 - Similar a un tipo scalar.
 - Útiles para trabajar con una lista de valores predefinidos.
 - Para crear un enum dentro del schema usar "enum" en lugar de "type".
@@ -102,8 +117,12 @@ enum Cursos {
 }
 ~~~
 
+<hr>
+
 <a name="modifiers"></a>
+
 # 5. Type Modifiers
+
 - Sirven para modificar el comportamiento cuando usamos un tipo.
 - **!:** Indica valor obligatorio.
 - **[]:** Lista de valores con un elemento o más.
@@ -119,8 +138,12 @@ type Profesor {
 }
 ~~~
 
+<hr>
+
 <a name="interfaces"></a>
+
 # 6. Interfaces
+
 - Definiciones abstractas de atributos comunes.
 - Útiles para retornar obhetos de diferentes tipos.
 - Necesarias cuando buscamos acceder a cierto grupo de objetos que deben cumplir con las propiedades definidas por la interfaz.
@@ -141,8 +164,12 @@ type Alumno implements Perfil {
 }
 ~~~
 
+<hr>
+
 <a name="root"></a>
+
 # 7. Root Types
+
 - Son puntos de entrada.
 Sirven para comunicar al cliente con el servidor a través de ellos.
 - Tipos
@@ -182,8 +209,12 @@ Sirven para comunicar al cliente con el servidor a través de ellos.
 
 ![image6](./images/image6.png)
 
+<hr>
+
 <a name="input"></a>
+
 # 8. Input Types
+
 - Elementos que permiten pasar valores a Queries/Mutations.
 - Se pueden pasar valores simples (escalares) u objetos complejos.
 - Se comporta como los argumentos ante cualquier operación.
@@ -192,8 +223,12 @@ Sirven para comunicar al cliente con el servidor a través de ellos.
 
 ![image8](./images/image8.png)
 
+<hr>
+
 <a name="comments"></a>
+
 # 9. Comentarios
+
 - Podemos documentar nuestras APIs añadiendo comentarios en el schema.
 - GrapQL admite markdown dentro del schema para comentarios.
 - Tipos
@@ -201,8 +236,12 @@ Sirven para comunicar al cliente con el servidor a través de ellos.
     - **Varias líneas:** Triples comillas dobles.
 - Facilita la generación de SDL.
 
+<hr>
+
 <a name="maf"></a>
+
 # 10. Merge, Alias y Fragment
+
 ## Merge
 Si realizamos dos consultas en paralelo sobre la misma instancia el resultado será una mezcla de ambas consultas.
 
@@ -218,15 +257,22 @@ Es posible separar partes comunes a varias consultas mediante fragments, de form
 
 ![image11](./images/image11.png)
 
+<hr>
 
 <a name="variables"></a>
+
 # 11. Query Variables
+
 Es posible parametrizar argumentos utilizando query variables.
 
 ![image12](./images/image12.png)
 
+<hr>
+
 <a name="is"></a>
+
 # 12. Include y skip
+
 Estas directivas permiten incluir o excluir campos en una consulta de forma parametrizada.
 
 ![image13](./images/image13.png)
