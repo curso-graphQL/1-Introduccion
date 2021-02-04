@@ -77,8 +77,8 @@
 
 ## Ejemplo
 
-~~~
-// schema.graphql
+- *schema.graphql*
+~~~ graphql
 type Profesor {
     nombre: String
     apellidos: String
@@ -103,7 +103,7 @@ type Asignatura {
 - Para crear un enum dentro del schema usar "enum" en lugar de "type".
 
 ## Ejemplo
-~~~
+~~~graphql
 type Profesor {
     nombre: String
     apellidos: String
@@ -128,7 +128,7 @@ enum Cursos {
 - **[]:** Lista de valores con un elemento o más.
 
 ## Ejemplo
-~~~
+~~~graphql
 type Profesor {
     nombre: String!
     cursos1: [String] //Lista
@@ -150,7 +150,7 @@ type Profesor {
 - Abstraemos grupos de tipos sobre ellos como una entidad.
 
 ## Ejemplo
-~~~
+~~~graphql
 interface Perfil {
     nombre: String!
     email: String!
