@@ -18,7 +18,7 @@
 # 1. Esquema GraphQL
 
 - Centro de cualquier implementación del servidor del GraphQL.
-- Sin el esquema mo podemos contruir la API.
+- Sin el esquema no podemos contruir la API.
 - Es la parte más compleja de un proyecto GraphQL.
 - Nos alejamos de la filosofía de las API REST.
 
